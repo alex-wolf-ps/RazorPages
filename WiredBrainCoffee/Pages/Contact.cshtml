@@ -1,0 +1,63 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container">
+    <h1 class="mt-4 mb-3">
+        Contact
+        <small>We'd love to hear from you.</small>
+    </h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <p>Life gets busy but we try to respond with 24 hours.  If you have a more immediate question, give us a ring using the number over on the right. We are crazy friendly!</p>
+            <br />
+            <form name="sentMessage" id="contactForm" novalidate>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Your Name:</label>
+                        <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Message:</label>
+                        <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                    </div>
+                </div>
+                <div id="success"></div>
+                <button type="submit" class="btn btn-success" id="sendMessageButton">Send Message!</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-12 mb-4">
+                <img style="width: 100%" src="~/images/placeholder.png" />
+                <h3>Contact Details</h3>
+                <p>
+                    1234 Wired Brain Blvd
+                    <br>Awesome City, MM 55555
+                    <br>
+                </p>
+                <p>
+                    <span title="Phone">Phone</span>: (123) 456-7890<br />
+                    <span title="Hours">Hours</span>: Monday - Friday: 6:00 AM to 9:00 PM
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
