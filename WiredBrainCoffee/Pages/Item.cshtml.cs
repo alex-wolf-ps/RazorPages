@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WiredBrainCoffee.Pages
 {
-    public class MenuModel : PageModel
+    public class ItemModel : PageModel
     {
-        public void OnGet()
-        {
+        public string Message { get; set; }
 
+        public void OnGet(int id)
+        {
+            Message = "The id is " + id;
         }
     }
 }

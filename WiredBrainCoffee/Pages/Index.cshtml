@@ -1,8 +1,6 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
+
 <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -10,15 +8,13 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('images/banner1.png')">
+            <div class="carousel-item active" style="background-image: url('images/banner/banner-bag.png')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Premium Roasted Coffee</h3>
                     <p>Simply the best.</p>
                 </div>
             </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('images/banner2.png')">
+            <div class="carousel-item" style="background-image: url('images/banner/banner-ground.png')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Stay Grounded</h3>
                     <p>Take our grounded coffee home to help stay focused.</p>
@@ -35,10 +31,8 @@
         </a>
     </div>
 </header>
-<!-- Page Content -->
 <div class="container">
     <h1 class="my-4">Three options to keep your brain wired.</h1>
-    <!-- Marketing Icons Section -->
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card h-100">
@@ -82,30 +76,51 @@
     </div>
     <hr class="mb-5">
     <div class="row">
-        <div class="col-lg-6">
-            <h2>Download our Mobile App</h2>
-            <p>Stay wired on the go with these benefits:</p>
-            <ul>
-                <li>Coupons and promotions</li>
-                <li>Brainiacs club benefits</li>
-                <li>Store locator</li>
-                <li>Latest menu options</li>
-                <li>Order ahead</li>
-                <li>Contact us</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Download our App</h2>
+                    <div class="description">
+                        <p>Stay wired on the go with these benefits:</p>
+                        <ul>
+                            <li>Coupons and promotions</li>
+                            <li>Brainiacs club benefits</li>
+                            <li>Store locator</li>
+                            <li>Latest menu options</li>
+                        </ul>
+                    </div>
+                    <img class="img-fluid rounded" src="~/images/download-small.png" alt="">
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-success">Download</a>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <img class="img-fluid rounded" src="~/images/download.png" alt="">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Popular Brews</h2>
+                    <p><span class="card-text text-success">Pumpkin Latte</span> - A refreshing pumpkin flavored drink, with a hint of mocha and spice. <i>350 calories</i><i> $3.49</i></p>
+                    <p><span class="card-text text-success">Light Mocha</span> - All the mocha flavoring with just a few of the calories. <i>100 calories</i><i> $2.99</i></p>
+                    <p><span class="card-text text-success">Vanilla Cappucino</span> - The natural sweetness of vanilla ensures minimal sugar and calories. <i>150 calories</i><i> $3.99</i></p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-success">Full Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Contact Us</h2>
+                    <img style="width: 75%; margin: 0 auto; display: block;" src="~/images/placeholder.png" />
+                    <p>Questions or feedback about anything? We'd love to hear from you.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-success">Contact Us</a>
+                </div>
+            </div>
         </div>
     </div>
     <hr class="mb-5">
-    <div class="row mb-4">
-        <div class="col-md-8">
-            <p>Questions about anything? We'd love to hear from you.</p>
-        </div>
-        <div class="col-md-4">
-            <a class="btn btn-lg btn-secondary btn-block" href="/contact">Contact Us</a>
-        </div>
-    </div>
 </div>

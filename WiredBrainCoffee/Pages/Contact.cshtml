@@ -17,7 +17,7 @@
             <form name="sentMessage" id="contactForm" novalidate>
                 <div class="control-group form-group">
                     <div class="controls">
-                        <label>Your Name:</label>
+                        <label>Name:</label>
                         <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
                         <p class="help-block"></p>
                     </div>
@@ -45,8 +45,18 @@
             </form>
         </div>
         <div class="col-md-4">
-            <div class="col-md-12 mb-4">
-                <img style="width: 100%" src="~/images/placeholder.png" />
+            <div>
+                <h3>Keep in Touch</h3>
+                <p>Sign up for our mailing list - no spam, we promise.</p>
+                <div class="control-group form-group">
+                    <input type="text" class="form-control" placeholder="Email" />
+                </div>
+                <div class="control-group form-group">
+                    <input type="submit" class="btn btn-success" value="Join" />
+                </div>
+            </div>
+            <hr />
+            <div>
                 <h3>Contact Details</h3>
                 <p>
                     1234 Wired Brain Blvd
@@ -58,6 +68,7 @@
                     <span title="Hours">Hours</span>: Monday - Friday: 6:00 AM to 9:00 PM
                 </p>
             </div>
+            <img style="width: 100%" src="~/images/placeholder.png" />
         </div>
     </div>
 </div>
