@@ -58,12 +58,12 @@ body {
 }
 
 .bg-ground {
-    background-image: url("../images/ground.jpg");
+    background-image: url("../images/ground.png");
     background-size: cover;
 }
 
 .bg-bagel {
-    background-image: url("../images/bagel.jpg");
+    background-image: url("../images/bagel.png");
     background-size: cover;
     background-position-y: -75px;
 }
